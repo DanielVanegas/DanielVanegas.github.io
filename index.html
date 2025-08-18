@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daniel Vanegas — Portafolio</title>
+  <meta name="description" content="Portafolio de proyectos GIS, ETL y automatización con Python de Daniel Vanegas.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="container header">
+    <div class="id">
+      <h1>Daniel Vanegas</h1>
+      <p>Ingeniero Catastral y Geodesta · GIS & Data · Python · ETL</p>
+      <p class="muted">Bogotá, Colombia · <a href="mailto:dvanegasf@outlook.com">dvanegasf@outlook.com</a> · 
+        <a href="https://www.linkedin.com/in/dvanegasf/" target="_blank" rel="noopener">LinkedIn</a> · 
+        <a href="https://github.com/DanielVanegas" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section aria-labelledby="about">
+      <h2 id="about">Sobre mí</h2>
+      <p>Profesional con experiencia en catastro, avalúos y datos espaciales. Desarrollo soluciones con <strong>Python</strong>, <strong>SQL/PostgreSQL</strong>, <strong>PostGIS</strong> y <strong>ETL</strong>. Me enfoco en automatización de flujos, control de calidad de datos y visualización web sencilla.</p>
+    </section>
+
+    <section aria-labelledby="skills">
+      <h2 id="skills">Habilidades</h2>
+      <ul class="tags">
+        <li>Python (pandas, geopandas, arcpy)</li>
+        <li>SQL · PostgreSQL · PostGIS</li>
+        <li>ETL · Validación de datos</li>
+        <li>QGIS · ArcGIS</li>
+        <li>Leaflet · HTML · CSS · JS</li>
+        <li>PyQt6 · xlwings</li>
+        <li>Linux · Git/GitHub</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="projects">
+      <h2 id="projects">Proyectos</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>PyQt Excel Automation</h3>
+          <p>Aplicación de escritorio para copiar y validar <em>datos</em> e <em>imágenes</em> entre libros Excel con reglas y logs.</p>
+          <ul class="bullets">
+            <li>PyQt6 · xlwings · JSON</li>
+            <li>Validación de tipos · ETL</li>
+          </ul>
+          <p><a class="btn" href="https://github.com/DanielVanegas/pyqt-excel-automation" target="_blank" rel="noopener">Ver repositorio</a></p>
+        </article>
+
+        <article class="card">
+          <h3>Scraper inmobiliario</h3>
+          <p>Pipeline para extraer, validar y almacenar ofertas en PostgreSQL, con verificación de caídas y notificaciones.</p>
+          <ul class="bullets">
+            <li>Python · Requests/BS4</li>
+            <li>PostgreSQL · Bash</li>
+          </ul>
+          <p><a class="btn" href="https://github.com/DanielVanegas" target="_blank" rel="noopener">Repositorio (sección Proyectos)</a></p>
+        </article>
+
+        <article class="card">
+          <h3>BD integral de avalúos</h3>
+          <p>Modelo relacional con PostGIS, triggers y restricciones para gestionar asignaciones, visitas, ofertas y avalúos.</p>
+          <ul class="bullets">
+            <li>PostgreSQL · PostGIS</li>
+            <li>Triggers · Integridad</li>
+          </ul>
+          <p><a class="btn" href="#" title="Agrega aquí el enlace al repo del .sql">Añadir enlace</a></p>
+        </article>
+
+        <article class="card">
+          <h3>Dashboard de asignaciones</h3>
+          <p>Mapa + tabla editable (filtros/búsqueda) para gestión de visitas y estados. Integrable con Postgres.</p>
+          <ul class="bullets">
+            <li>Leaflet · DataTables</li>
+            <li>HTML · CSS · JS</li>
+          </ul>
+          <p><a class="btn" href="#" title="Agrega el enlace cuando publiques el repo">Añadir enlace</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="contact">
+      <h2 id="contact">Contacto</h2>
+      <p>¿Colaboramos? Escríbeme a <a href="mailto:dvanegasf@outlook.com">dvanegasf@outlook.com</a>.</p>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <small>© <span id="y"></span> Daniel Vanegas. Hecho con HTML/CSS puro.</small>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
